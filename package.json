@@ -1,0 +1,56 @@
+{
+  "name": "famous-refresh-loader",
+  "version": "0.0.1",
+  "homepage": "https://github.com/IjzerenHein/famous-refresh-loader",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IjzerenHein/famous-refresh-loader.git"
+  },
+  "browserify": {
+    "transform": [
+      "deamdify",
+      "famousify",
+      "brfs"
+    ]
+  },
+  "author": {
+    "name": "Hein Rutjes <hrutjes@gmail.com>"
+  },
+  "description": "Fancy refresh loader for famo.us using particles",
+  "keywords": [
+    "famo.us",
+    "famous",
+    "refresh",
+    "refresh-loader",
+    "refreshloader",
+    "loader",
+    "pulltorefresh",
+    "pull-to-refresh"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/IjzerenHein/famous-refresh-loader/blob/master/LICENSE"
+    }
+  ],
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/IjzerenHein/famous-refresh-loader/issues"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "brfs": "latest",
+    "browserify": "latest",
+    "deamdify": "latest",
+    "famousify": "latest",
+    "grunt": "latest",
+    "grunt-eslint": "latest",
+    "grunt-jscs": "latest"
+  },
+  "files": [
+    "RefreshLoader.js",
+    "LICENSE"
+  ]
+}

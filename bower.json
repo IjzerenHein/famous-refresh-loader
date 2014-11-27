@@ -1,0 +1,34 @@
+{
+  "name": "famous-refresh-loader",
+  "version": "0.0.1",
+  "homepage": "https://github.com/IjzerenHein/famous-refresh-loader",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IjzerenHein/famous-refresh-loader.git"
+  },
+  "authors": [
+    "Hein Rutjes <hrutjes@gmail.com>"
+  ],
+  "description": "Fancy refresh loader for famo.us using particles",
+  "keywords": [
+    "famo.us",
+    "famous",
+    "refresh",
+    "refresh-loader",
+    "refreshloader",
+    "loader",
+    "pulltorefresh",
+    "pull-to-refresh"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "examples",
+    "docs",
+    "Gruntfile.js",
+    "package.json"
+  ]
+}
