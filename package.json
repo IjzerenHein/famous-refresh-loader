@@ -1,6 +1,6 @@
 {
   "name": "famous-refresh-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/IjzerenHein/famous-refresh-loader",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "author": {
     "name": "Hein Rutjes <hrutjes@gmail.com>"
   },
-  "description": "Fancy refresh loader for famo.us using particles",
+  "description": "Spinning pull to refresh loader for famo.us",
   "keywords": [
     "famo.us",
     "famous",
@@ -24,6 +24,7 @@
     "refresh-loader",
     "refreshloader",
     "loader",
+    "spinner",
     "pulltorefresh",
     "pull-to-refresh"
   ],
