@@ -1,11 +1,9 @@
 famous-refresh-loader
 ==========
 
-Spinning pull to refresh loader for famo.us.
+A spinning pull to refresh loader that can be used with the famous-flex ScrollView.
 
 ![Screenshot](screenshot.gif)
-
-A spinning pull to refresh loaded that can be used with the famous-flex ScrollView.
 
 ## Demos
 
@@ -38,13 +36,14 @@ var scrollView = new FlexScrollView({
 this.add(scrollView);
 ```
 
+
 ## Options
 
-The following options are supported by RefreshLoader:
+The following options are supported by the refresh-loader:
 
 ```javascript
 var refreshLoader = new RefreshLoader({
-	size: [undefined, 100],
+	size: [undefined, 100],		// required
 	color: '#AAAAAA',			// particle color
     particleCount: 10,			// number of particles
     particleSize: 6,			// size of particle
