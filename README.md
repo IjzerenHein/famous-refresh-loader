@@ -53,7 +53,8 @@ var refreshLoader = new RefreshLoader({
     pullToRefresh: false,		// enables pull to refresh
     pullToRefreshBackgroundColor: 'white', // color of surfaces which obscures the loader when pulling
     pullToRefreshDirection: 1,	// set to 0 for horizontal pull to refresh
-    pullToRefreshFooter: false  // set to true for footer usage
+    pullToRefreshFooter: false, // set to true for footer usage
+    pullToRefreshFactor: 1.5    // pull 1.5x the size to activate refresh
 });
 ```
 

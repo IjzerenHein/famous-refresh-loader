@@ -55,7 +55,8 @@ define(function(require, exports, module) {
         pullToRefresh: false,
         pullToRefreshBackgroundColor: 'white',
         pullToRefreshDirection: 1,
-        pullToRefreshFooter: false
+        pullToRefreshFooter: false,
+        pullToRefreshFactor: 1.5 // pull 1.5x the size to activate refresh
     };
 
     /**
@@ -205,6 +206,21 @@ define(function(require, exports, module) {
      */
     RefreshLoader.prototype.setPullToRefreshStatus = function(status) {
         this._pullToRefreshStatus = status;
+    };
+
+    /**
+     * Called by the flex ScrollView to get the size on how far to pull before the
+     * refresh is activated.
+     *
+     * @return {Size} Pull to refresh size
+     */
+    RefreshLoader.prototype.getPullToRefreshSize = function() {
+        if (this.options.pullToRefreshDirection) {
+            return [this.options.size[0], this.options.size[1] * this.options.pullToRefreshFactor];
+        }
+        else {
+            return [this.options.size[1] * this.options.pullToRefreshFactor, this.options.size[1]];
+        }
     };
 
     module.exports = RefreshLoader;
