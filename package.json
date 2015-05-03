@@ -1,17 +1,10 @@
 {
   "name": "famous-refresh-loader",
-  "version": "0.0.3",
+  "version": "0.3.0",
   "homepage": "https://github.com/IjzerenHein/famous-refresh-loader",
   "repository": {
     "type": "git",
     "url": "git://github.com/IjzerenHein/famous-refresh-loader.git"
-  },
-  "browserify": {
-    "transform": [
-      "deamdify",
-      "famousify",
-      "brfs"
-    ]
   },
   "author": {
     "name": "Hein Rutjes <hrutjes@gmail.com>"
@@ -42,10 +35,6 @@
     "node": ">= 0.10.0"
   },
   "devDependencies": {
-    "brfs": "latest",
-    "browserify": "latest",
-    "deamdify": "latest",
-    "famousify": "latest",
     "grunt": "latest",
     "grunt-eslint": "latest",
     "grunt-jscs": "latest"
@@ -53,5 +42,10 @@
   "files": [
     "RefreshLoader.js",
     "LICENSE"
-  ]
+  ],
+  "browserify": {
+    "transform": [
+      "deamdify"
+    ]
+  }
 }
